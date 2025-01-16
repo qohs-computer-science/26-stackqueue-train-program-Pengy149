@@ -1,5 +1,10 @@
+// LinkedList is imported to be used as initial value for Queue
 import java.util.LinkedList;
+
+// Imported to be used for Inspection Track as the carts should be processed in the order given 
 import java.util.Queue;
+
+// Stack is imported to store the carts in a train 
 import java.util.Stack;
 
 public class Train {
