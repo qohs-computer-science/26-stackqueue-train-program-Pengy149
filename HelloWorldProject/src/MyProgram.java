@@ -98,8 +98,9 @@ public class MyProgram {
 					trackBaltimore.addCart(cartName, contents, originCity, destinationCity, weight, milesTraveled);
 					baltimoreWeight += tempWeight;
 				} // end else if statement 
-				else
+				else {
 					trackOther.addCart(cartName, contents, originCity, destinationCity, weight, milesTraveled);
+				} // end else statement 
 			} // end if statement 
 
 			else if (cartName.substring(0,3).equals("ENG")) {
@@ -154,6 +155,8 @@ public class MyProgram {
 						trackBaltimore.addCart(cartName, contents, originCity, destinationCity, weight, milesTraveled);
 						baltimoreWeight += tempWeight;
 					} // end else if statement 
+					else 
+						trackOther.addCart(cartName, contents, originCity, destinationCity, weight, milesTraveled);
 				} // end while loop 
 
 				trackTrenton.outputCarts();
